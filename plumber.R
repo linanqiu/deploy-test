@@ -31,7 +31,7 @@ function() {
 #* @get /pinned_counter
 function(counter = 1) {
   data_scheduled <- pin_get('pins-test-scheduled-data', board = 'rsconnect')
-  params <- list('data' = data_scheduled, 'counter' = 1)
+  params <- list('data' = data_scheduled, 'counter' = counter)
   output <- list(
     'prod' = calculate_1(params), 
     'rc' = calculate_2(params), 

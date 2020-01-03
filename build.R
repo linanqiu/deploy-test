@@ -1,6 +1,8 @@
 library('rsconnect')
 
-sys_files = c('*.Rproj', 'build.R', 'build')
+build_folder_name = '.build'
+
+sys_files = c('*.Rproj', 'build.R', build_folder_name)
 app_files = c('plumber.R', 'app.R', 'report-1.Rmd', 'report-2.Rmd')
 
 exclude_patterns = paste(sys_files, app_files, sep = '|', collapse = '|')
@@ -14,11 +16,10 @@ copy_source = grep(
 
 build_main <- function(app_file) {
   app_name = tools::file_path_sans_ext(app_file)
-  app_dir = file.path('build', app_name)
+  app_dir = file.path(build_folder_name, app_name)
   
   message(sprintf('Build started for app. AppName=%s, AppDirectory=%s', app_name, app_dir))
   
-  dir.create('build', showWarnings = FALSE)
   dir_exists <- dir.create(app_dir, showWarnings = FALSE)
   if (!dir_exists) {
     message(sprintf('App directory already exists. Not creating it. AppDirectory=%s', app_dir))
@@ -51,4 +52,6 @@ build_write_manifest <- function(app_file, app_dir) {
 
 message(sprintf('Deleting existing build folder'))
 unlink('build', recursive = TRUE)
+dir.create(build_folder_name, showWarnings = FALSE)
+
 lapply(app_files, build_main)
