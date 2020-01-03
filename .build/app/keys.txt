@@ -1,0 +1,4 @@
+OG3yAVy7RnUtxgykkolElAk6y0b2qCcr
+
+Sys.setenv('CONNECT_API_KEY' = 'OG3yAVy7RnUtxgykkolElAk6y0b2qCcr')
+Sys.setenv('CONNECT_SERVER' = 'http://13.68.206.159')
