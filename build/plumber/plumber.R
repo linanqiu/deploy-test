@@ -13,6 +13,7 @@ library(dplyr)
 
 source('shared-logic/model-1.R')
 source('shared-logic/model-2.R')
+source('shared-logic/model-3.R')
 
 board_register('rsconnect', server = Sys.getenv('CONNECT_SERVER'), key = Sys.getenv("CONNECT_API_KEY"))
 
