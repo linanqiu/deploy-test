@@ -1,7 +1,7 @@
 library('rsconnect')
 
 sys_files = c('*.Rproj', 'build.R', 'build')
-app_files = c('plumber.R', 'viz.R', 'report.Rmd')
+app_files = c('plumber.R', 'app.R', 'report-1.Rmd', 'report-2.Rmd')
 
 exclude_patterns = paste(sys_files, app_files, sep = '|', collapse = '|')
 

@@ -4,7 +4,7 @@
   "platform": "3.6.2",
   "metadata": {
     "appmode": "rmd-static",
-    "primary_rmd": "report.Rmd",
+    "primary_rmd": "report-2.Rmd",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
@@ -1388,7 +1388,7 @@
     "packrat/packrat.lock": {
       "checksum": "fa61fe7d58714e06347f4d3babd2ee16"
     },
-    "report.Rmd": {
+    "report-2.Rmd": {
       "checksum": "313a43d91549e16b84eeca3ef2f82861"
     },
     "shared-logic/model-1.R": {
