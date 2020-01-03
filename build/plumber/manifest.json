@@ -3,7 +3,7 @@
   "locale": "en_US",
   "platform": "3.6.2",
   "metadata": {
-    "appmode": "shiny",
+    "appmode": "api",
     "primary_rmd": null,
     "primary_html": null,
     "content_category": null,
@@ -378,31 +378,6 @@
         "Built": "R 3.6.2; x86_64-apple-darwin17.7.0; 2019-12-31 22:07:03 UTC; unix"
       }
     },
-    "fastmap": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "fastmap",
-        "Title": "Fast Implementation of a Key-Value Store",
-        "Version": "1.0.1",
-        "Authors@R": "c(\n    person(\"Winston\", \"Chang\", email = \"winston@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(given = \"RStudio\", role = c(\"cph\", \"fnd\")),\n    person(given = \"Tessil\", role = \"cph\", comment = \"hopscotch_map library\")\n    )",
-        "Description": "Fast implementation of a key-value store. Environments are commonly\n    used as key-value stores, but every time a new key is used, it is added to\n    R's global symbol table, causing a small amount of memory leakage. This can\n    be problematic in cases where many different keys are used. Fastmap avoids\n    this memory leak issue by implementing the map using data structures in C++.",
-        "License": "MIT + file LICENSE",
-        "Encoding": "UTF-8",
-        "LazyData": "true",
-        "RoxygenNote": "6.1.1",
-        "Suggests": "testthat (>= 2.1.1)",
-        "URL": "https://r-lib.github.io/fastmap/, https://github.com/r-lib/fastmap",
-        "BugReports": "https://github.com/r-lib/fastmap/issues",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-10-07 23:14:48 UTC; winston",
-        "Author": "Winston Chang [aut, cre],\n  RStudio [cph, fnd],\n  Tessil [cph] (hopscotch_map library)",
-        "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-10-08 05:20:02 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin17.7.0; 2019-12-31 17:47:33 UTC; unix"
-      }
-    },
     "glue": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com/",
@@ -430,35 +405,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2019-03-12 22:30:02 UTC",
         "Built": "R 3.6.2; x86_64-apple-darwin17.7.0; 2019-12-31 17:46:01 UTC; unix"
-      }
-    },
-    "htmltools": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "htmltools",
-        "Type": "Package",
-        "Title": "Tools for HTML",
-        "Version": "0.4.0",
-        "Author": "RStudio, Inc.",
-        "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Description": "Tools for HTML generation and output.",
-        "Depends": "R (>= 2.14.1)",
-        "Imports": "utils, digest, Rcpp, rlang",
-        "Suggests": "markdown, testthat, withr",
-        "Enhances": "knitr",
-        "License": "GPL (>= 2)",
-        "URL": "https://github.com/rstudio/htmltools",
-        "BugReports": "https://github.com/rstudio/htmltools/issues",
-        "RoxygenNote": "6.1.1",
-        "LinkingTo": "Rcpp",
-        "Encoding": "UTF-8",
-        "Collate": "'RcppExports.R' 'html_dependency.R' 'html_escape.R'\n'html_print.R' 'shim.R' 'utils.R' 'tags.R' 'template.R'",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-10-04 17:43:48 UTC; jcheng",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-10-04 23:00:08 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin17.7.0; 2019-12-31 17:46:05 UTC; unix"
       }
     },
     "httpuv": {
@@ -891,59 +837,6 @@
         "Built": "R 3.6.2; x86_64-apple-darwin17.7.0; 2019-12-31 17:37:22 UTC; unix"
       }
     },
-    "shiny": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "shiny",
-        "Type": "Package",
-        "Title": "Web Application Framework for R",
-        "Version": "1.4.0",
-        "Authors@R": "c(\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n    person(\"Yihui\", \"Xie\", role = \"aut\", email = \"yihui@rstudio.com\"),\n    person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(family = \"jQuery Foundation\", role = \"cph\",\n    comment = \"jQuery library and jQuery UI library\"),\n    person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt\"),\n    person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery UI library; authors listed in inst/www/shared/jqueryui/AUTHORS.txt\"),\n    person(\"Mark\", \"Otto\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(\"Jacob\", \"Thornton\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Bootstrap contributors\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Twitter, Inc\", role = \"cph\",\n    comment = \"Bootstrap library\"),\n    person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n    comment = \"html5shiv library\"),\n    person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n    comment = \"Respond.js library\"),\n    person(\"Stefan\", \"Petre\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Andrew\", \"Rowls\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n    comment = \"Font-Awesome font\"),\n    person(\"Brian\", \"Reavis\", role = c(\"ctb\", \"cph\"),\n    comment = \"selectize.js library\"),\n    person(\"Kristopher Michael\", \"Kowal\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(family = \"es5-shim contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(\"Denis\", \"Ineshin\", role = c(\"ctb\", \"cph\"),\n    comment = \"ion.rangeSlider library\"),\n    person(\"Sami\", \"Samhuri\", role = c(\"ctb\", \"cph\"),\n    comment = \"Javascript strftime library\"),\n    person(family = \"SpryMedia Limited\", role = c(\"ctb\", \"cph\"),\n    comment = \"DataTables library\"),\n    person(\"John\", \"Fraser\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"John\", \"Gruber\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n    comment = \"highlight.js library\"),\n    person(family = \"R Core Team\", role = c(\"ctb\", \"cph\"),\n    comment = \"tar implementation from R\")\n    )",
-        "Description": "Makes it incredibly easy to build interactive web\n    applications with R. Automatic \"reactive\" binding between inputs and\n    outputs and extensive prebuilt widgets make it possible to build\n    beautiful, responsive, and powerful applications with minimal effort.",
-        "License": "GPL-3 | file LICENSE",
-        "Depends": "R (>= 3.0.2), methods",
-        "Imports": "utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite\n(>= 0.9.16), xtable, digest, htmltools (>= 0.4.0), R6 (>= 2.0),\nsourcetools, later (>= 1.0.0), promises (>= 1.1.0), tools,\ncrayon, rlang (>= 0.4.0), fastmap (>= 1.0.0)",
-        "Suggests": "datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=\n1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),\nmagrittr, yaml",
-        "URL": "http://shiny.rstudio.com",
-        "BugReports": "https://github.com/rstudio/shiny/issues",
-        "Collate": "'app.R' 'bookmark-state-local.R' 'stack.R' 'bookmark-state.R'\n'bootstrap-deprecated.R' 'bootstrap-layout.R' 'globals.R'\n'conditions.R' 'map.R' 'utils.R' 'bootstrap.R'\n'cache-context.R' 'cache-disk.R' 'cache-memory.R'\n'cache-utils.R' 'diagnose.R' 'fileupload.R' 'font-awesome.R'\n'graph.R' 'reactives.R' 'reactive-domains.R' 'history.R'\n'hooks.R' 'html-deps.R' 'htmltools.R' 'image-interact-opts.R'\n'image-interact.R' 'imageutils.R' 'input-action.R'\n'input-checkbox.R' 'input-checkboxgroup.R' 'input-date.R'\n'input-daterange.R' 'input-file.R' 'input-numeric.R'\n'input-password.R' 'input-radiobuttons.R' 'input-select.R'\n'input-slider.R' 'input-submit.R' 'input-text.R'\n'input-textarea.R' 'input-utils.R' 'insert-tab.R' 'insert-ui.R'\n'jqueryui.R' 'middleware-shiny.R' 'middleware.R' 'modal.R'\n'modules.R' 'notifications.R' 'priorityqueue.R' 'progress.R'\n'react.R' 'render-cached-plot.R' 'render-plot.R'\n'render-table.R' 'run-url.R' 'serializers.R'\n'server-input-handlers.R' 'server.R' 'shiny-options.R'\n'shiny.R' 'shinyui.R' 'shinywrappers.R' 'showcase.R'\n'snapshot.R' 'tar.R' 'test-export.R' 'timer.R' 'update-input.R'",
-        "RoxygenNote": "6.1.1",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "no",
-        "Packaged": "2019-10-08 16:21:27 UTC; winston",
-        "Author": "Winston Chang [aut, cre],\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Yihui Xie [aut],\n  Jonathan McPherson [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Dave Gandy [ctb, cph] (Font-Awesome font),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Kristopher Michael Kowal [ctb, cph] (es5-shim library),\n  es5-shim contributors [ctb, cph] (es5-shim library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
-        "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-10-10 12:50:02 UTC",
-        "Built": "R 3.6.2; ; 2019-12-31 17:47:36 UTC; unix"
-      }
-    },
-    "sourcetools": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "sourcetools",
-        "Type": "Package",
-        "Title": "Tools for Reading, Tokenizing and Parsing R Code",
-        "Version": "0.1.7",
-        "Author": "Kevin Ushey",
-        "Maintainer": "Kevin Ushey <kevinushey@gmail.com>",
-        "Description": "Tools for the reading and tokenization of R code. The\n    'sourcetools' package provides both an R and C++ interface for the tokenization\n    of R code, and helpers for interacting with the tokenized representation of R\n    code.",
-        "License": "MIT + file LICENSE",
-        "LazyData": "TRUE",
-        "Depends": "R (>= 3.0.2)",
-        "Suggests": "testthat",
-        "RoxygenNote": "5.0.1",
-        "BugReports": "https://github.com/kevinushey/sourcetools/issues",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-04-25 03:19:22 UTC; kevin",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-04-25 03:38:09 UTC",
-        "Built": "R 3.6.2; x86_64-apple-darwin17.7.0; 2019-12-31 17:47:29 UTC; unix"
-      }
-    },
     "stringi": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com/",
@@ -1139,31 +1032,6 @@
         "Built": "R 3.6.2; ; 2019-12-31 18:23:12 UTC; unix"
       }
     },
-    "xtable": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "xtable",
-        "Version": "1.8-4",
-        "Date": "2019-04-08",
-        "Title": "Export Tables to LaTeX or HTML",
-        "Authors@R": "c(person(\"David B.\", \"Dahl\", role=\"aut\"),\n             person(\"David\", \"Scott\", role=c(\"aut\",\"cre\"),\n               email=\"d.scott@auckland.ac.nz\"),\n             person(\"Charles\", \"Roosen\", role=\"aut\"),\n             person(\"Arni\", \"Magnusson\", role=\"aut\"),\n             person(\"Jonathan\", \"Swinton\", role=\"aut\"),\n             person(\"Ajay\", \"Shah\", role=\"ctb\"),\n             person(\"Arne\", \"Henningsen\", role=\"ctb\"),\n             person(\"Benno\", \"Puetz\", role=\"ctb\"),\n             person(\"Bernhard\", \"Pfaff\", role=\"ctb\"),\n             person(\"Claudio\", \"Agostinelli\", role=\"ctb\"),\n             person(\"Claudius\", \"Loehnert\", role=\"ctb\"),\n             person(\"David\", \"Mitchell\", role=\"ctb\"),\n             person(\"David\", \"Whiting\", role=\"ctb\"),\n             person(\"Fernando da\", \"Rosa\", role=\"ctb\"),\n             person(\"Guido\", \"Gay\", role=\"ctb\"),\n             person(\"Guido\", \"Schulz\", role=\"ctb\"),\n             person(\"Ian\", \"Fellows\", role=\"ctb\"),\n             person(\"Jeff\", \"Laake\", role=\"ctb\"),\n             person(\"John\", \"Walker\", role=\"ctb\"),\n             person(\"Jun\", \"Yan\", role=\"ctb\"),\n             person(\"Liviu\", \"Andronic\", role=\"ctb\"),\n             person(\"Markus\", \"Loecher\", role=\"ctb\"),\n             person(\"Martin\", \"Gubri\", role=\"ctb\"),\n             person(\"Matthieu\", \"Stigler\", role=\"ctb\"),\n             person(\"Robert\", \"Castelo\", role=\"ctb\"),\n             person(\"Seth\", \"Falcon\", role=\"ctb\"),\n             person(\"Stefan\", \"Edwards\", role=\"ctb\"),\n             person(\"Sven\", \"Garbade\", role=\"ctb\"),\n             person(\"Uwe\", \"Ligges\", role=\"ctb\"))",
-        "Maintainer": "David Scott <d.scott@auckland.ac.nz>",
-        "Imports": "stats, utils",
-        "Suggests": "knitr, plm, zoo, survival",
-        "VignetteBuilder": "knitr",
-        "Description": "Coerce data to LaTeX and HTML tables.",
-        "URL": "http://xtable.r-forge.r-project.org/",
-        "Depends": "R (>= 2.10.0)",
-        "License": "GPL (>= 2)",
-        "Repository": "CRAN",
-        "NeedsCompilation": "no",
-        "Packaged": "2019-04-21 10:56:51 UTC; dsco036",
-        "Author": "David B. Dahl [aut],\n  David Scott [aut, cre],\n  Charles Roosen [aut],\n  Arni Magnusson [aut],\n  Jonathan Swinton [aut],\n  Ajay Shah [ctb],\n  Arne Henningsen [ctb],\n  Benno Puetz [ctb],\n  Bernhard Pfaff [ctb],\n  Claudio Agostinelli [ctb],\n  Claudius Loehnert [ctb],\n  David Mitchell [ctb],\n  David Whiting [ctb],\n  Fernando da Rosa [ctb],\n  Guido Gay [ctb],\n  Guido Schulz [ctb],\n  Ian Fellows [ctb],\n  Jeff Laake [ctb],\n  John Walker [ctb],\n  Jun Yan [ctb],\n  Liviu Andronic [ctb],\n  Markus Loecher [ctb],\n  Martin Gubri [ctb],\n  Matthieu Stigler [ctb],\n  Robert Castelo [ctb],\n  Seth Falcon [ctb],\n  Stefan Edwards [ctb],\n  Sven Garbade [ctb],\n  Uwe Ligges [ctb]",
-        "Date/Publication": "2019-04-21 12:20:03 UTC",
-        "Built": "R 3.6.2; ; 2019-12-31 17:47:27 UTC; unix"
-      }
-    },
     "yaml": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com/",
@@ -1240,7 +1108,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "b5c858daa4c0f99a2d66d6505613a029"
+      "checksum": "513cd4e5458f3f2dda892ff9809d8aca"
     },
     "keys.txt": {
       "checksum": "84243c468e549707198b366761f2a503"
@@ -1281,14 +1149,8 @@
     "packrat/desc/fansi": {
       "checksum": "8ebe56143d9949644d21c92dd02d43bc"
     },
-    "packrat/desc/fastmap": {
-      "checksum": "96262344a83728a60bc359ae2923ef51"
-    },
     "packrat/desc/glue": {
       "checksum": "16a148e7fd8eeabb50e34e70bd00e08d"
-    },
-    "packrat/desc/htmltools": {
-      "checksum": "f3f0250adc09c96a40558c7f0e9dd66f"
     },
     "packrat/desc/httpuv": {
       "checksum": "6395de727349273a36f758f697b70a69"
@@ -1344,12 +1206,6 @@
     "packrat/desc/rlang": {
       "checksum": "ceed9f56f7a847e5315388e18d04420f"
     },
-    "packrat/desc/shiny": {
-      "checksum": "57d7f95774df08b9c02696f5c388df63"
-    },
-    "packrat/desc/sourcetools": {
-      "checksum": "1e1d23653daa34e6352e44b5962a32a7"
-    },
     "packrat/desc/stringi": {
       "checksum": "55dfcdb75b2e34e87a9eefe7cd9e7d93"
     },
@@ -1371,9 +1227,6 @@
     "packrat/desc/withr": {
       "checksum": "c82aeffc182ddb49976cfa071b81157f"
     },
-    "packrat/desc/xtable": {
-      "checksum": "9e890dbf4ee3d916044cc37be3b59050"
-    },
     "packrat/desc/yaml": {
       "checksum": "8d00e4b8429c21a1b6237fc740f678ab"
     },
@@ -1384,7 +1237,7 @@
       "checksum": "370c919103a4f722c3acd2a63a371d08"
     },
     "packrat/packrat.lock": {
-      "checksum": "03ac72266fa4aba9977bf8773152d592"
+      "checksum": "480071a4d6be013bcf4c047676c2d671"
     },
     "shared-logic/model-1.R": {
       "checksum": "0b19bf960908b786210a237ab8f87461"

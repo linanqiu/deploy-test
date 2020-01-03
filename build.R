@@ -1,7 +1,7 @@
 library('rsconnect')
 
 sys_files = c('*.Rproj', 'build.R', 'build')
-app_files = c('api.R', 'viz.R', 'report.Rmd')
+app_files = c('plumber.R', 'viz.R', 'report.Rmd')
 
 exclude_patterns = paste(sys_files, app_files, sep = '|', collapse = '|')
 
@@ -18,6 +18,7 @@ build_main <- function(app_file) {
   
   message(sprintf('Build started for app. AppName=%s, AppDirectory=%s', app_name, app_dir))
   
+  dir.create('build', showWarnings = FALSE)
   dir_exists <- dir.create(app_dir, showWarnings = FALSE)
   if (!dir_exists) {
     message(sprintf('App directory already exists. Not creating it. AppDirectory=%s', app_dir))
@@ -28,7 +29,6 @@ build_main <- function(app_file) {
   build_copy_apps(app_file, app_dir)
   
   build_write_manifest(app_file, app_dir)
-  
   message(sprintf('Build completed for app. AppName=%s, AppDirectory=%s', app_name, app_dir))
 }
 
@@ -43,9 +43,12 @@ build_copy_apps <- function(app_file, app_dir) {
 }
 
 build_write_manifest <- function(app_file, app_dir) {
+  # Eventually we will need to stop using writeManifest's infer app mode since that restricts us to using the default file names
   app_primary_doc = app_file
-  message(sprintf('Writing manifest for app. AppFile=%s, AppDirectory=%s, AppPrimaryDoc=%s', app_file, app_dir, app_primary_doc))
+  message(sprintf('Writing manifest for app. AppDirectory=%s, AppPrimaryDoc=%s', app_dir, app_primary_doc))
   writeManifest(appDir = app_dir, appPrimaryDoc = app_primary_doc)
 }
 
+message(sprintf('Deleting existing build folder'))
+unlink('build', recursive = TRUE)
 lapply(app_files, build_main)
