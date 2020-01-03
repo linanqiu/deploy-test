@@ -1108,7 +1108,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "51f7eb45a34e8e50804c796de58589e6"
+      "checksum": "475bff96c9b2ca74d64dd6bdb9d5bf5b"
     },
     "keys.txt": {
       "checksum": "84243c468e549707198b366761f2a503"
@@ -1238,6 +1238,9 @@
     },
     "packrat/packrat.lock": {
       "checksum": "480071a4d6be013bcf4c047676c2d671"
+    },
+    "shared-logic/error-handling.R": {
+      "checksum": "33d4621a7ccbe83a98f48ff4c05267e4"
     },
     "shared-logic/model-1.R": {
       "checksum": "0b19bf960908b786210a237ab8f87461"

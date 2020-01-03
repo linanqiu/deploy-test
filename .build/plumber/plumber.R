@@ -14,6 +14,7 @@ library(dplyr)
 source('shared-logic/model-1.R')
 source('shared-logic/model-2.R')
 source('shared-logic/model-3.R')
+source('shared-logic/error-handling.R')
 
 board_register(
   'rsconnect',
@@ -39,9 +40,9 @@ function(counter = 1) {
     pin_get('pins-test-scheduled-data', board = 'rsconnect')
   params <- list('data' = data_scheduled, 'counter' = counter)
   output <- list(
-    'prod' = try(calculate_1(params)),
-    'rc' = try(calculate_2(params)),
-    'prototype' = try(calculate_3(params))
+    'prod' = tryOrString(calculate_1(params)),
+    'rc' = tryOrString(calculate_2(params)),
+    'prototype' = tryOrString(calculate_3(params))
   )
   output
 }

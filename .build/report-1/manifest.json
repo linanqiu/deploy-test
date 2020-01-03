@@ -1391,6 +1391,9 @@
     "report-1.Rmd": {
       "checksum": "313a43d91549e16b84eeca3ef2f82861"
     },
+    "shared-logic/error-handling.R": {
+      "checksum": "33d4621a7ccbe83a98f48ff4c05267e4"
+    },
     "shared-logic/model-1.R": {
       "checksum": "0b19bf960908b786210a237ab8f87461"
     },

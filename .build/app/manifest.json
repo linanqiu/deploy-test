@@ -2097,6 +2097,9 @@
     "packrat/packrat.lock": {
       "checksum": "f46d7162f72fd35ea73bcc6b98644ef7"
     },
+    "shared-logic/error-handling.R": {
+      "checksum": "33d4621a7ccbe83a98f48ff4c05267e4"
+    },
     "shared-logic/model-1.R": {
       "checksum": "0b19bf960908b786210a237ab8f87461"
     },
