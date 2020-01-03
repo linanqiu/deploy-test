@@ -14,7 +14,6 @@ library(dplyr)
 source('shared-logic/model-1.R')
 source('shared-logic/model-2.R')
 source('shared-logic/model-3.R')
-source('shared-logic/')
 
 board_register(
   'rsconnect',
