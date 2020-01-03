@@ -44,7 +44,9 @@ build_copy_apps <- function(app_file, app_dir) {
 }
 
 build_write_manifest <- function(app_file, app_dir) {
-  # Eventually we will need to stop using writeManifest's infer app mode since that restricts us to using the default file names
+  # unfortunately writeManifest doesn't allow us to specify appMode explicitly 
+  # and we have to use inferAppMode in the writeManifest call, which goes off...you guessed it!
+  # FUCKING FILE NAMES. Wtf.
   app_primary_doc = app_file
   message(sprintf('Writing manifest for app. AppDirectory=%s, AppPrimaryDoc=%s', app_dir, app_primary_doc))
   writeManifest(appDir = app_dir, appPrimaryDoc = app_primary_doc)
