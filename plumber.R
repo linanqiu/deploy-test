@@ -40,8 +40,9 @@ function(counter = 1) {
     pin_get('pins-test-scheduled-data', board = 'rsconnect')
   output <- list(
     'prod' = tryOrString(calculate_1(data_scheduled, counter)),
-    'rc' = tryOrString(calculate_2(data_scheduled, counter)),
-    'prototype' = tryOrString(calculate_3(data_scheduled, counter))
+    'rc' = list(
+      tryOrString(calculate_2(data_scheduled, counter)), 
+      tryOrString(calculate_3(data_scheduled, counter)))
   )
   output
 }
