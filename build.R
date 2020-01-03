@@ -51,7 +51,7 @@ build_write_manifest <- function(app_file, app_dir) {
 }
 
 message(sprintf('Deleting existing build folder'))
-unlink('build', recursive = TRUE)
+unlink(build_folder_name, recursive = TRUE)
 dir.create(build_folder_name, showWarnings = FALSE)
 
 lapply(app_files, build_main)
