@@ -38,11 +38,10 @@ function() {
 function(counter = 1) {
   data_scheduled <-
     pin_get('pins-test-scheduled-data', board = 'rsconnect')
-  params <- list('data' = data_scheduled, 'counter' = counter)
   output <- list(
-    'prod' = tryOrString(calculate_1(params)),
-    'rc' = tryOrString(calculate_2(params)),
-    'prototype' = tryOrString(calculate_3(params))
+    'prod' = tryOrString(calculate_1(data_scheduled, counter)),
+    'rc' = tryOrString(calculate_2(data_scheduled, counter)),
+    'prototype' = tryOrString(calculate_3(data_scheduled, counter))
   )
   output
 }

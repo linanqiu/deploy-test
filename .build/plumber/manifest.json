@@ -1108,7 +1108,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "475bff96c9b2ca74d64dd6bdb9d5bf5b"
+      "checksum": "f9a7defca1aa6d0c098b9b846a09c051"
     },
     "keys.txt": {
       "checksum": "84243c468e549707198b366761f2a503"
@@ -1240,16 +1240,16 @@
       "checksum": "480071a4d6be013bcf4c047676c2d671"
     },
     "shared-logic/error-handling.R": {
-      "checksum": "33d4621a7ccbe83a98f48ff4c05267e4"
+      "checksum": "0e6f95fc45a7840954fef1be4d940a26"
     },
     "shared-logic/model-1.R": {
-      "checksum": "0b19bf960908b786210a237ab8f87461"
+      "checksum": "3793350736e45f21078973016016cd14"
     },
     "shared-logic/model-2.R": {
-      "checksum": "4f8cfdcf5b50fc97161a462e288bfc7c"
+      "checksum": "e103695524537e05128f353581b7033b"
     },
     "shared-logic/model-3.R": {
-      "checksum": "844d3d5e4c55236780416c958ef75840"
+      "checksum": "6b8edfc156709f3b3d8e24dcc2a48442"
     }
   },
   "users": null

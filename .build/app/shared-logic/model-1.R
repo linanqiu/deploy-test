@@ -1,5 +1,9 @@
 library(dplyr)	
 
-calculate_1 <- function(params) {	
-  params$data %>% filter(Counter == params$counter)	
+calculate_1 <- function(data, counter) {	
+  data %>% filter(Counter == counter)	%>% calculate_1_single
+}
+
+calculate_1_single <- function(row) {
+  mutate(row, Output = RV1)
 }
